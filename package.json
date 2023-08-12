@@ -1,0 +1,36 @@
+{
+  "name": "financial-tracker",
+  "version": "1.0.0",
+  "description": "Application to track your financial cash in and cash out amount",
+  "main": "app.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/app.js",
+    "watch": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "financial",
+    "tracker",
+    "api",
+    "server",
+    "express",
+    "typescript"
+  ],
+  "author": "Surya Faturohman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.9",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
